@@ -1,5 +1,17 @@
 # Parameter-Efficient Adaptation of CLIP for Cervical OCT Diagnosis: Aligning Multi-Center Images via Text Consistency
 
+##Quick Start
+
+###dataset prepare
+'''
+$DATA/
+|–– mixed/
+|–– huaxi/
+|–– xiangya/
+'''
+run
+"""run a script """
+python 32shot.py
 
 method
 ![image](https://github.com/user-attachments/assets/4d89936f-b93b-4317-a099-4a0d1b85b61f)
