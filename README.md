@@ -2,7 +2,7 @@
 
 ## 🔧 Quick Start
 
-### 📁 Dataset
+### 📁 Dataset Prepare
 
 ```
 $DATA/
@@ -15,7 +15,7 @@ $DATA/
 
 run a script 
 ```
-python 32shot.py
+python 32shot_run_shell.py
 ```
 ## METHOD
 ![image](https://github.com/user-attachments/assets/4d89936f-b93b-4317-a099-4a0d1b85b61f)
