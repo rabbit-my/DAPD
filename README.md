@@ -20,7 +20,7 @@ $DATA/
 |–– xiangya/
 ```
 
-### 🚀 Run
+### 🚀 Training & Evaluation
 
 run a script：
 ```
