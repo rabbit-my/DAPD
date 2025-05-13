@@ -4,10 +4,8 @@ import clip
 from datasets import build_dataset
 from datasets.utils import build_data_loader
 from utils.build_options import set_random_seed , build_default_options
-# from model import run_model
-# from model_args import run_model_args
-# from model_wo_ot_loss import run_model_woot
-from model_wo_proto import run_model_woproto
+from model import run_model
+
 
 
 def main():
@@ -47,7 +45,7 @@ def main():
 
     print("Data preparation completed!")
 
-    run_model_woproto(args, clip_model, logit_scale, mixed_dataset, train_loader, mixed_val_loader, mixed_test_loader, xiangya_test_loader, huaxi_test_loader)
+    run_model(args, clip_model, logit_scale, mixed_dataset, train_loader, mixed_val_loader, mixed_test_loader, xiangya_test_loader, huaxi_test_loader)
 
 if __name__ == '__main__':
     main()
