@@ -13,20 +13,20 @@ $DATA/
 
 ### 🚀 Run
 
-run a script 
+run a script：
 ```
 python 32shot_run_shell.py
 ```
-## METHOD
+## Method
 ![image](https://github.com/user-attachments/assets/4d89936f-b93b-4317-a099-4a0d1b85b61f)
 
 
 
-### prompt：
+## Prompt in text encoder：
 ![image](https://github.com/user-attachments/assets/9d869c94-b3ef-41f3-8f75-3a8af6d74511)
 
 
-mian result
+## mian result
 
 ![image](https://github.com/user-attachments/assets/2c497714-f92f-4b9f-aa11-0e53849d32d8)
 
