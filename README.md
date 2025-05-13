@@ -12,17 +12,17 @@ $DATA/
 |–– xiangya/
 '''
 
-run
+### run
 """run a script """
+
 python 32shot.py
 
-method
+## METHOD
 ![image](https://github.com/user-attachments/assets/4d89936f-b93b-4317-a099-4a0d1b85b61f)
 
 
-text encoder
 
-prompt：
+### prompt：
 ![image](https://github.com/user-attachments/assets/9d869c94-b3ef-41f3-8f75-3a8af6d74511)
 
 
