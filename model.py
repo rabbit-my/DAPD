@@ -119,30 +119,25 @@ def evaluate_lora_plot(args, logit_scale, clip_model, loader, dataset, prototype
     acc /= tot_samples
     return acc, np.array(y_true), np.array(y_pred)
 
-# t-SNE 可视化函数
+
 def plot_tsne(features_xiangya, features_huaxi, labels_xiangya, labels_huaxi, class_name, output_folder):
-    # 连接 Xiangya 和 Huaxi 数据集的特征
+
     features = torch.cat([features_xiangya, features_huaxi], dim=0)
     labels = torch.cat([labels_xiangya, labels_huaxi], dim=0)
 
-    # 使用 t-SNE 进行降维
     tsne = TSNE(n_components=2, random_state=42)
     reduced_features = tsne.fit_transform(features)
 
-    # 创建不同数据集的颜色
     plt.figure(figsize=(8, 6))
 
-    # 创建一个用于标记数据集来源的标签
     dataset_labels = ['Xiangya'] * len(features_xiangya) + ['Huaxi'] * len(features_huaxi)
 
-    # 使用 hue 来根据数据集来源区分颜色
     sns.scatterplot(x=reduced_features[:, 0], y=reduced_features[:, 1], hue=dataset_labels, palette=["blue", "red"], legend='full', s=60)
     
     plt.title(f't-SNE for Class {class_name}', fontsize=16)
     plt.xlabel("t-SNE component 1")
     plt.ylabel("t-SNE component 2")
 
-    # 添加图例
     plt.legend(title='Dataset', labels=['Xiangya', 'Huaxi'], bbox_to_anchor=(1.05, 1), loc='upper left')
 
     if not os.path.exists(output_folder):
