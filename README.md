@@ -11,11 +11,12 @@ $DATA/
 |–– xiangya/
 ```
 
-### run
-"""run a script """
+### 🚀 Run
 
+run a script 
+```
 python 32shot.py
-
+```
 ## METHOD
 ![image](https://github.com/user-attachments/assets/4d89936f-b93b-4317-a099-4a0d1b85b61f)
 
