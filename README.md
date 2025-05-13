@@ -2,6 +2,12 @@
 
 ## 🔧 Quick Start
 
+### 📦 Installation
+
+```
+pip3 install torch==2.0.1 torchaudio==2.0.2 torchvision==0.15.2
+```
+
 ### 📁 Dataset Prepare
 
 ```
