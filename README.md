@@ -4,13 +4,12 @@
 
 ### dataset prepare
 
-'''
-
+```
 $DATA/
 |–– mixed/
 |–– huaxi/
 |–– xiangya/
-'''
+```
 
 ### run
 """run a script """
