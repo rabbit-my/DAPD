@@ -22,11 +22,11 @@ python 32shot_run_shell.py
 
 
 
-## Prompt in text encoder：
+## Prompt in Text Encoder：
 ![image](https://github.com/user-attachments/assets/9d869c94-b3ef-41f3-8f75-3a8af6d74511)
 
 
-## mian result
+## Mian Result
 
 ![image](https://github.com/user-attachments/assets/2c497714-f92f-4b9f-aa11-0e53849d32d8)
 
