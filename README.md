@@ -76,7 +76,7 @@ You can set the result saving location in the `32shot_run_shell.py` file by modi
 
 ### Framework
 
-<img src="https://github.com/user-attachments/assets/4d89936f-b93b-4317-a099-4a0d1b85b61f" alt="image" width="700"/>
+<img src="https://github.com/user-attachments/assets/4d89936f-b93b-4317-a099-4a0d1b85b61f" alt="image" width="650"/>
 
 
 
