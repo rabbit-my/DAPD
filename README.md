@@ -94,7 +94,8 @@ Here, we provide the prompts used in the paper for cervical OCT datasets. If you
 
 ## 💬 Contact
 
-If you have any questions or would like to collaborate, feel free to open an issue on GitHub:
+For questions or collaborations:
+
 
 👉 [Submit an Issue](https://github.com/rabbit-my/DAPD/issues)
 
