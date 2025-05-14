@@ -19,7 +19,9 @@ conda create -n your_env python==3.9
 conda activate your_env
 pip install -r requirements.txt
 
-pip install git+https://github.com/openai/CLIP.git
+git clone https://github.com/openai/CLIP.git
+cd CLIP
+pip install .
 ```
 
 ### 📁 Dataset Prepare
