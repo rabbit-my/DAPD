@@ -8,7 +8,9 @@ This study proposes a novel method for adapting CLIP to **cervical OCT** diagnos
 ### 📦 Installation
 
 ```
+conda activate your_env
 pip3 install torch==2.0.1 torchaudio==2.0.2 torchvision==0.15.2
+pip install -r requirements.txt  
 ```
 
 ### 📁 Dataset Prepare
