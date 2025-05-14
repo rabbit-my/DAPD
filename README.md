@@ -28,15 +28,16 @@ python 32shot_run_shell.py
 ```
 ## Method
 
-<img src="https://github.com/user-attachments/assets/4d89936f-b93b-4317-a099-4a0d1b85b61f" alt="image" width="500"/>
+<img src="https://github.com/user-attachments/assets/4d89936f-b93b-4317-a099-4a0d1b85b61f" alt="image" width="700"/>
 
 
 
 ## Prompt in Text Encoder：
-![image](https://github.com/user-attachments/assets/9d869c94-b3ef-41f3-8f75-3a8af6d74511)
 
+<img src="https://github.com/user-attachments/assets/9d869c94-b3ef-41f3-8f75-3a8af6d74511" alt="image" width="700"/>
 
 ## Mian Result
 
-![image](https://github.com/user-attachments/assets/2c497714-f92f-4b9f-aa11-0e53849d32d8)
+<img src="https://github.com/user-attachments/assets/2c497714-f92f-4b9f-aa11-0e53849d32d8" alt="image" width="700"/>
+
 
