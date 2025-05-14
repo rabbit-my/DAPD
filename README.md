@@ -1,6 +1,7 @@
 # Parameter-Efficient Adaptation of CLIP for Cervical OCT Diagnosis: Aligning Multi-Center Images via Text Consistency
 
 
+
 ## 📝 Abstract
 
 This study proposes a novel method for adapting CLIP to **cervical OCT** diagnosis by leveraging textual consistency to address **cross-center image variations**. Our approach utilizes LoRA to fine-tune CLIP efficiently and incorporates a dual-alignment mechanism to enhance consistency between image and text features across centers. Experimental results on **three datasets** demonstrate that our method outperforms existing SOTA approaches in various metrics and cross-center generalization performance, showcasing the potential of combining cross-modal learning with OCT imaging to advance automated cervical disease detection. 
