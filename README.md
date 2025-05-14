@@ -25,6 +25,11 @@ pip install -r requirements.txt
 ```
 $DATA/
 |–– mixed/
+    |–– images
+        |–– class1
+        |–– class2
+        ...
+        |–– class5
 |–– huaxi/
 |–– xiangya/
 ```
