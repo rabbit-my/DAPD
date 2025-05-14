@@ -27,7 +27,8 @@ run a script：
 python 32shot_run_shell.py
 ```
 ## Method
-![image](https://github.com/user-attachments/assets/4d89936f-b93b-4317-a099-4a0d1b85b61f)
+
+<img src="https://github.com/user-attachments/assets/4d89936f-b93b-4317-a099-4a0d1b85b61f" alt="image" width="500"/>
 
 
 
