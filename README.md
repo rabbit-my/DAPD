@@ -33,7 +33,9 @@ $DATA/
         ...
         |–– class5
 |–– huaxi/
+    ...
 |–– xiangya/
+    ...
 ```
 
 ### 🚀 Training & Evaluation
