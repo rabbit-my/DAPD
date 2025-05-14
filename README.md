@@ -44,7 +44,7 @@ $DATA/
 ```
 You can replace **mixed**, **huaxi**, and **xiangya** with your own dataset.
 
-**load dataset**
+**load dataset** in `datasets/.`
 ```
 datasets/
 |–– __init__.py
