@@ -16,7 +16,6 @@ The following instructions are for **Linux** installation. We would like to reco
 
 ```
 conda activate your_env
-pip3 install torch==2.0.1 torchaudio==2.0.2 torchvision==0.15.2
 pip install -r requirements.txt  
 ```
 
