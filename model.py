@@ -5,31 +5,8 @@ from loralib.utils import mark_only_lora_as_trainable, apply_lora, get_lora_para
     load_lora
 from torch import nn
 from prompt import descriptions
-import numpy as np
-from sklearn.metrics import confusion_matrix
-import matplotlib.pyplot as plt
-import seaborn as sns
-import os
-from sklearn.manifold import TSNE
 
 
-def plot_confusion_matrix(y_true, y_pred, dataset_name, dataset, accuracy, save_dir="/home/codebase/Yinmi/BM_OCT/con_pic/"):
-
-    cm = confusion_matrix(y_true, y_pred)
-    os.makedirs(save_dir, exist_ok=True)
-    filename = f"{dataset_name}_Acc-{accuracy:.2f}.png".replace(" ", "_")
-    save_path = os.path.join(save_dir, filename)
-
-    plt.figure(figsize=(8, 6))
-    sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", xticklabels=dataset.classnames, yticklabels=dataset.classnames)
-    plt.xlabel("Predicted Label")
-    plt.ylabel("True Label")
-    plt.title(f"Confusion Matrix: {dataset_name} (Acc: {accuracy:.2f})")
-
-    plt.savefig(save_path, dpi=300, bbox_inches="tight")
-    plt.close()  
-
-    print(f"confusion_matrix has sasved : {save_path}")
 
 
 def evaluate_lora(
@@ -117,33 +94,8 @@ def evaluate_lora_plot(args, logit_scale, clip_model, loader, dataset, prototype
             y_pred.extend(final_logits.argmax(dim=1).cpu().numpy())
 
     acc /= tot_samples
-    return acc, np.array(y_true), np.array(y_pred)
+    return acc
 
-
-def plot_tsne(features_xiangya, features_huaxi, labels_xiangya, labels_huaxi, class_name, output_folder):
-
-    features = torch.cat([features_xiangya, features_huaxi], dim=0)
-    labels = torch.cat([labels_xiangya, labels_huaxi], dim=0)
-
-    tsne = TSNE(n_components=2, random_state=42)
-    reduced_features = tsne.fit_transform(features)
-
-    plt.figure(figsize=(8, 6))
-
-    dataset_labels = ['Xiangya'] * len(features_xiangya) + ['Huaxi'] * len(features_huaxi)
-
-    sns.scatterplot(x=reduced_features[:, 0], y=reduced_features[:, 1], hue=dataset_labels, palette=["blue", "red"], legend='full', s=60)
-    
-    plt.title(f't-SNE for Class {class_name}', fontsize=16)
-    plt.xlabel("t-SNE component 1")
-    plt.ylabel("t-SNE component 2")
-
-    plt.legend(title='Dataset', labels=['Xiangya', 'Huaxi'], bbox_to_anchor=(1.05, 1), loc='upper left')
-
-    if not os.path.exists(output_folder):
-        os.makedirs(output_folder)
-    plt.savefig(f'{output_folder}/class_{class_name}_tsne.png', bbox_inches='tight')
-    plt.close()
 
 
 def run_model(args, clip_model, logit_scale, dataset,
@@ -291,17 +243,16 @@ def run_model(args, clip_model, logit_scale, dataset,
 
     print("[Final Evaluation on Test Set]")
 
-    acc_test, y_true_test, y_pred_test = evaluate_lora_plot(args, logit_scale, clip_model, test_loader, dataset, prototypes=prototypes)
+    acc_test= evaluate_lora_plot(args, logit_scale, clip_model, test_loader, dataset, prototypes=prototypes)
     print(f"Final Test accuracy: {acc_test:.2f}\n")
-    plot_confusion_matrix(y_true_test, y_pred_test, "Test_Set",dataset, acc_test)
 
-    acc_test_e1, y_true_xiangya, y_pred_xiangya = evaluate_lora_plot(args, logit_scale, clip_model, xiangya_loader, dataset, prototypes=prototypes)
+    acc_test_e1= evaluate_lora_plot(args, logit_scale, clip_model, xiangya_loader, dataset, prototypes=prototypes)
     print(f"Xiangya Test accuracy: {acc_test_e1:.2f}\n")
-    plot_confusion_matrix(y_true_xiangya, y_pred_xiangya, "Xiangya_Set",dataset, acc_test_e1)
 
-    acc_test_huaxi, y_true_huaxi, y_pred_huaxi = evaluate_lora_plot(args, logit_scale, clip_model, huaxi_test_loader, dataset, prototypes=prototypes)
+
+    acc_test_huaxi= evaluate_lora_plot(args, logit_scale, clip_model, huaxi_test_loader, dataset, prototypes=prototypes)
     print(f"Huaxi Test accuracy: {acc_test_huaxi:.2f}\n")
-    plot_confusion_matrix(y_true_huaxi, y_pred_huaxi, "Huaxi_Set",dataset, acc_test_huaxi)
+
 
 
 
