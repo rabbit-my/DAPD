@@ -29,6 +29,9 @@ $DATA/
 |–– mixed/
     |–– images
         |–– class1
+            |–– ×××1.png
+            |–– ×××2.png
+            ...
         |–– class2
         ...
         |–– class5
