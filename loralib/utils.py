@@ -241,7 +241,7 @@ def save_lora(args, list_lora_layers):
     for i, layer in enumerate(list_lora_layers):
         layer_weights = {}
 
-        # 处理 MultiheadAttention 的 LoRA
+
         if isinstance(layer, PlainMultiheadAttentionLoRA):
             if 'q' in args.params:
                 layer_weights['q_proj'] = {
@@ -264,7 +264,7 @@ def save_lora(args, list_lora_layers):
                     'w_lora_B': layer.proj.w_lora_B.data
                 }
 
-        # 处理 MLP 的 LoRA（LinearLoRA）
+
         elif isinstance(layer, LinearLoRA):
             layer_weights['linear'] = {
                 'w_lora_A': layer.w_lora_A.data,
