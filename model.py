@@ -7,8 +7,6 @@ from torch import nn
 from prompt import descriptions
 
 
-
-
 def evaluate_lora(
         args,
         logit_scale,
