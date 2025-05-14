@@ -45,9 +45,10 @@ python 32shot_run_shell.py
 
 <img src="https://github.com/user-attachments/assets/2c497714-f92f-4b9f-aa11-0e53849d32d8" alt="image" width="700"/>
 
-## 💬 Questions or Collaborations
+## 💬 Contact
 
 If you have any questions or would like to collaborate, feel free to open an issue on GitHub:
 
 👉 [Submit an Issue](https://github.com/rabbit-my/DAPD/issues)
 
+Thanks for your attention!
