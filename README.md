@@ -15,7 +15,7 @@ This study proposes a novel method for adapting CLIP to **cervical OCT** diagnos
 The following instructions are for **Linux** installation. We would like to recommend the requirements as follows.
 
 ```
-conda create -n your_env
+conda create -n your_env python==3.9
 conda activate your_env
 pip install -r requirements.txt  
 ```
