@@ -1,1 +1,5 @@
-
+opencv-python             4.9.0.80                 pypi_0    pypi
+tiktoken                  0.7.0                    pypi_0    pypi
+timm                      0.6.12                   pypi_0    pypi
+torch                     2.3.1                    pypi_0    pypi
+torchvision               0.18.1                   pypi_0    pypi
