@@ -44,7 +44,7 @@ You can replace **mixed**, **huaxi**, and **xiangya** with your own dataset.
 
 ### 🚀 Training & Evaluation
 
-We created a runnable script using 32-shot as an example, with parameters that can be easily modified as needed：
+We written a runnable script using 32-shot as an example, with parameters that can be easily modified as needed：
 ```
 python 32shot_run_shell.py
 ```
