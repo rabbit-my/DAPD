@@ -22,6 +22,8 @@ pip install -r requirements.txt
 
 ### 📁 Dataset Prepare
 
+Please create a folder named DATA and place the dataset inside it, organized in the following structure:
+
 ```
 $DATA/
 |–– mixed/
