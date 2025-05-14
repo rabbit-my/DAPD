@@ -44,7 +44,7 @@ $DATA/
 ```
 You can replace **mixed**, **huaxi**, and **xiangya** with your own dataset.
 
-**load dataset** in `datasets/.`
+**Load dataset** in `datasets/.`According to the paper, we select data from the mixed-center as the few-shot support set.
 ```
 datasets/
 |–– __init__.py
@@ -53,6 +53,8 @@ datasets/
 |–– xiangya.py # Return the test set (External A dataset).
 |–– utils.py
 ```
+
+Our code supports two options for dataset splits: using separate JSON files for training, validation, and testing, or performing random splits based on a given ratio. See `datasets/mixed.py` for details.
 
 ### 🚀 Training & Evaluation
 
