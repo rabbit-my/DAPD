@@ -24,7 +24,7 @@ git clone https://github.com/openai/CLIP.git
 cd CLIP
 pip install .
 ```
-This code is built on top of the awesome toolbox [Dassl.pytorch](https://github.com/KaiyangZhou/Dassl.pytorch) so you need to install the dassl environment first. 
+This code is built on top of the awesome toolbox [Dassl.pytorch](https://github.com/KaiyangZhou/Dassl.pytorch) so you need to install the dassl environment. 
 
 ```
 git clone https://github.com/KaiyangZhou/Dassl.pytorch
