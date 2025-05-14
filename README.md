@@ -1,6 +1,5 @@
 # Parameter-Efficient Adaptation of CLIP for Cervical OCT Diagnosis: Aligning Multi-Center Images via Text Consistency
 
-⭐ Star this repo if you find it useful!
 
 ## 📝 Abstract
 
@@ -51,4 +50,4 @@ If you have any questions or would like to collaborate, feel free to open an iss
 
 👉 [Submit an Issue](https://github.com/rabbit-my/DAPD/issues)
 
-Thanks for your attention!
+⭐ Star this repo if you find it useful!
