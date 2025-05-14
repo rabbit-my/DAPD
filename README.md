@@ -84,7 +84,7 @@ You can set the result saving location in the `32shot_run_shell.py` file by modi
 
 Here, we provide the prompts used in the paper for cervical OCT datasets. If you are using a different dataset, feel free to modify these text descriptions in our `prompt.py` file.
 
-<img src="https://github.com/user-attachments/assets/9d869c94-b3ef-41f3-8f75-3a8af6d74511" alt="image" width="700"/>
+<img src="https://github.com/user-attachments/assets/9d869c94-b3ef-41f3-8f75-3a8af6d74511" alt="image" width="650"/>
 
 ### Mian Result
 
