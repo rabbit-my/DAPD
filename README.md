@@ -48,7 +48,7 @@ We written a runnable script using 32-shot as an example, with parameters that c
 ```
 python 32shot_run_shell.py
 ```
-### Method
+### Framework
 
 <img src="https://github.com/user-attachments/assets/4d89936f-b93b-4317-a099-4a0d1b85b61f" alt="image" width="700"/>
 
