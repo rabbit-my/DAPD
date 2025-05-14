@@ -54,7 +54,7 @@ datasets/
 |–– utils.py
 ```
 
-Our code supports two options for dataset splits: using separate JSON files for training, validation, and testing, or performing random splits based on a given ratio. See `datasets/mixed.py` for details.
+Our code supports two options for dataset splits: using separate JSON files for training, validation, and testing, or performing random splits based on a given ratio. See `datasets/mixed_center_oct.py` for details.
 
 ### 🚀 Training & Evaluation
 
