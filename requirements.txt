@@ -11,4 +11,4 @@ matplotlib==3.7.1
 seaborn==0.12.2
 geomloss==0.2.6
 gdown==5.2.0
-dassl==0.6.3
+
