@@ -37,7 +37,7 @@ python 32shot_run_shell.py
 
 
 
-### Prompt for Text Encoder：
+### Prompt for Text Encoder
 
 <img src="https://github.com/user-attachments/assets/9d869c94-b3ef-41f3-8f75-3a8af6d74511" alt="image" width="700"/>
 
