@@ -56,6 +56,8 @@ python 32shot_run_shell.py
 
 ### Prompt for Text Encoder
 
+Here, we provide the prompts used in the paper. If you are using a different dataset, feel free to modify these text descriptions in our `prompt.py` file.
+
 <img src="https://github.com/user-attachments/assets/9d869c94-b3ef-41f3-8f75-3a8af6d74511" alt="image" width="700"/>
 
 ### Mian Result
