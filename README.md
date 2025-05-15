@@ -61,7 +61,7 @@ You can replace **mixed**, **huaxi**, and **xiangya** with your own dataset.
 datasets/
 |–– __init__.py
 |–– huaxi_oct.py # Return the test set(External B dataset).
-|–– mixed_center_oct.py  #Return the training set, validation set, and test set.
+|–– mixed_center_oct.py  # Return the training set, validation set, and test set.
 |–– xiangya.py # Return the test set (External A dataset).
 |–– utils.py
 ```
