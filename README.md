@@ -36,7 +36,7 @@ pip install .
 
 ### 📁 Dataset Prepare
 
-We follow the dataset from [“Prior Activation Map Guided Cervical OCT Image Classification”](https://link.springer.com/chapter/10.1007/978-3-031-72384-1_36) (MICCAI, 2024), which is collected based on the study [“Multi-center clinical study using optical coherence tomography for evaluation of cervical lesions in-vivo”](https://www.nature.com/articles/s41598-021-86711-3)
+We follow the dataset from [“Prior Activation Map Guided Cervical OCT Image Classification”](https://link.springer.com/chapter/10.1007/978-3-031-72384-1_36) (MICCAI, 2024), which is collected based on the study [“Multi-center clinical study using optical coherence tomography for evaluation of cervical lesions in-vivo”](https://www.nature.com/articles/s41598-021-86711-3)(Scientific Reports,2021).
 
 Please create a folder named DATA and place the dataset inside it, organized in the following structure:
 
